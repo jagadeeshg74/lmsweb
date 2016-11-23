@@ -1,0 +1,140 @@
+<div ng-include="global.navUrl"></div>
+
+<!-- SHOW OFF OUR FORMDATA OBJECT -->
+    
+    <pre>
+        {{ profile[0] }}
+    </pre>
+
+
+<div class="container">
+<div class="panel panel-primary">
+   <div class="panel-heading">
+   <h2 class="panel-title"> Edit Personal Details</h2> 
+   </div>
+   <p> * fields are mandatory</p> 
+   <form class="form-horizontal" ng-submit="updateProfile(editPersonalForm)" name="editPersonalForm" novalidate >
+    <div class="panel-body">
+        <div class="row">
+             <div class="form-group ">
+              <label class="control-label col-md-4"  >Name: </label>
+                 <div class="col-md-8">
+                   <input type="text" class="form-controls" ng-model= "profile[0].LM_PM_FIRST_NAME" placeholder="enter your name" size="50"  > </input>
+                </div>
+             </div>
+        </div>  
+
+         <div class="row">
+             <div class="form-group ">
+              <label for="dateInput" class="control-label col-md-4">Date of Birth:</label>
+              <div class="col-md-8">
+            <input type="date" id="" name="" ng-model="profile[0].LM_PM_DOB" 
+       placeholder="yyyy-MM-dd" min="1970-01-01" max="2013-12-31" required />
+            <div role="alert">
+             <span class="error" ng-show="myForm.input.$error.required">
+                 Required!</span>
+             <span class="error" ng-show="myForm.input.$error.date">
+                 Not a valid date!</span>
+            </div>
+        
+        </div>
+            </div>
+        </div>
+    
+
+        <div class="row">
+           <div class="form-group">
+            <label class="control-label col-md-4">Gender:</label> 
+                <div class="col-md-8">
+                  <label>  
+                  <input type="radio" name="gender" value="M"  ng-model="profile[0].LM_PM_GENDER" >Male </label>
+                  <label>
+                  <input type="radio" name="gender" value="F" ng-model="profile[0].LM_PM_GENDER"> Female</label>
+                 </div>
+            </div> 
+         </div>                              
+            <div class="row">
+                    <div class ="col-md-4 text-right" >
+                         <label>Contact numbers: </label>
+                    </div>
+
+                    <div class ="col-md-8">
+                        <p >Atleast one numbers is mandatory</p>
+                    </div> 
+            </div>
+
+            <div class="row">
+                <div class="form-group">
+
+                    <div class ="col-md-4 text-right" >
+                        <label>Mobile </label>
+                        </div>
+
+                     <div class ="col-md-8">
+                        <input type="no" class="form-controls" ng-model = "profile[0].LM_PM_MOBILE" placeholder="enter your phone number" >
+                     </div> 
+                 </div>
+            </div>
+                                <div class="row">
+                                      <div class="form-group">
+                                   
+                                        <div class ="col-md-4 text-right" >
+                                          <label>Phone </label>
+                                         </div>
+                                    
+                                         <div class ="col-md-8">
+                                            <div class="row">
+                                            <div class="col-md-1">
+                                            <input type="no" class="form-controls"></input>
+                                            </div> 
+                                            <div class="col-md-5">
+                                            <input type="no" class="form-controls"></input>
+                                            </div>
+                                            </div>
+                                          </div> 
+                                    </div>
+                                </div>
+                                    <div class="row">
+                                      <div class="form-group">
+                                   
+                                        <div class ="col-md-4 text-right" >
+                                          <label>Current location </label>
+                                         </div>
+                                    
+                                         <div class ="col-md-8 form-inline">
+                                          
+                                <select name="" id= "" class="form-control" ng-model="Profile[0].LM_PM_CITY">
+                                             <option value=""> Chennai</option>
+                                             <option value=""> Delhi</option>
+                                             <option value=""> Bangalore</option>
+                                             <option value=""> Mumbai</option>
+                                             <option value=""> Kolkatta</option>
+                                            </select>
+                                          </div> 
+                                       </div>
+                                    </div>             
+                                    
+                                           
+</div>                                          
+                                  <div class="row">
+
+                                                     <div class="form-group">
+                                                        <div class="col-md-6 text-right">
+                                                           <input type="hidden" class="form-control" id="profileid" ng-model = "profile[0].LM_PM_PROFILE_ID" placeholder="ProfileId ">  
+                                                         <button class="btn btn-success btn-lg ">Save</button>
+                                                         <button class="btn btn-primary btn-lg ">Cancel</button>
+                                                        </div>
+                                                       </div>
+                                                    </div> 
+                            
+                
+    
+       
+       
+    </form> 
+    </div>
+</div>  
+
+
+
+

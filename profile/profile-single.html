@@ -1,0 +1,230 @@
+<div ng-include="global.navUrl"></div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <h1 class="page-header">My Profile</h1>
+  </div>
+</div>
+
+<div class="container">
+
+<div class="panel panel-primary">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Personal Details         
+    <a class="btn btn-primary pull-right" href="#/profile/edit" role="button">Edit</a> 
+  </div>
+    <div class="panel-body">
+
+        <div class="row">
+                  <div class="col-md-4 text-right ">
+                   <label> Name :</label>
+                </div>
+                <div class="col-md-5">
+                   <p class="text-left"><b> </b>{{profile[0].LM_PM_FIRST_NAME}} {{profile[0].LM_PM_LAST_NAME}}</p>
+                </div>
+                <div class="col-md-3">
+                      </div>             
+                </div> 
+        <div class="row ">
+                  <div class="col-md-4 text-right ">
+                   <label> Gender:</label>
+                </div>
+                <div class="col-md-5">
+                   <p class="text-left"><b> </b>{{profile[0].LM_PM_GENDER}}
+                   </p>
+                </div>
+                <div class="col-md-3">
+                      </div>             
+                </div>
+         
+         <div class="row ">
+                  <div class="col-md-4 text-right ">
+                   <label> Date of Birth :</label>
+                </div>
+                <div class="col-md-5">
+                   <p class="text-left"><b> {{profile[0].LM_PM_DOB |  date :  "dd.MM.y" }}</b> 
+                   </p>
+                </div>
+                <div class="col-md-3">
+                      </div>             
+                </div>       
+
+      <div class="row ">
+                  <div class="col-md-4 text-right ">
+                   <label> Email:</label>
+                </div>
+                <div class="col-md-5">
+                   <p class="text-left"><b> </b>{{profile[0].LM_PM_EMAIL}} </p>
+                </div>
+                <div class="col-md-3">
+                      </div>                
+                </div> 
+
+      <div class="row ">
+                  <div class="col-md-4 text-right ">
+                   <label> Mobile:</label>
+                </div>
+                <div class="col-md-5">
+                   <p class="text-left"><b> </b>{{profile[0].LM_PM_MOBILE}}
+                   </p>
+                </div>
+                <div class="col-md-3">
+                      </div>             
+                </div> 
+
+
+     <div class="row ">
+                  <div class="col-md-4 text-right ">
+                   <label> City:</label>
+                </div>
+                <div class="col-md-5">
+                   <p class="text-left"><b> </b>{{profile[0].LM_PM_CITY}}
+                   </p>
+                </div>
+                <div class="col-md-3">
+                      </div>             
+                </div> 
+
+        <div class="row ">
+                  <div class="col-md-4 text-right ">
+                   <label> State:</label>
+                </div>
+                <div class="col-md-5">
+                   <p class="text-left"><b> </b>{{profile[0].LM_PM_STATE}}
+                   </p>
+                </div>
+                <div class="col-md-3">
+                      </div>             
+                </div> 
+  </div>
+</div>
+  
+  <div id="01" class="panel panel-primary">
+          <div class="panel-heading">
+              <h2 class="panel-title">Education :</h2>
+               <a class="btn btn-primary pull-right" href="#/profile/edit" role="button">Edit</a> 
+          </div>                 
+          <div class="panel-body">
+                <div class="row ">
+                  <div class="col-md-4 text-right ">
+                   <label> Graduation</label>
+                </div>
+                <div class="col-md-5">
+                   <p class="text-left"><b>BE/B.Tech</b>Computer science ,
+                   Women christian college,chennai Graduated Jun 2014 with
+                   score of 7 on 10.top 10 in class
+                   </p>
+                </div>
+                <div class="col-md-3">
+                      </div>
+                  
+                </div> 
+                       <div class="row ">
+                     <div class="col-md-4 text-right">
+                   <label> Class XII</label>
+                    </div>
+                <div class="col-md-5">
+                   <p class="text-left"><b>Others</b>with<b> 70-74%</b> in <b>2010</b>
+                   </p>
+                </div>
+                <div class="col-md-3">
+                      </div>
+                </div>
+                    <div class="row ">
+                     <div class="col-md-4 text-right">
+                   <label> Class X</label>
+                    </div>
+                <div class="col-md-5">
+                   <p><b>Assam</b>with<b> 80-84.9%</b> in <b>2004</b>
+                   </p>
+                </div>
+                <div class="col-md-3">
+                      </div>
+                
+                   
+                </div> 
+
+                      <div class="row ">
+                     <div class="col-md-4 text-right ">
+                   <label> Class XII Sub.Marks</label>
+                    </div>
+                <div class="col-md-5">
+                   <p>Maths<br/><b>Not Mentioned</b> </p>
+                   <p>English<br/><b>Not Mentioned </b></p>
+                </div>
+                <div class="col-md-3">
+                      </div>
+                
+                   
+                </div>  
+                       <div class="row ">
+                     <div class="col-md-4 text-right ">
+                   <label> Certification Course</label>
+                    </div>
+                <div class="col-md-5">
+                   <p><b>Certification course in Applied Mangerial Economics</b> </p>
+                   
+                </div>
+                <div class="col-md-3">
+                      </div>            
+                </div>    
+</div>
+</div>
+
+      <div id="01" class="panel panel-primary">
+          <div class="panel-heading">
+              <h2 class="panel-title">Work Preferences :</h2>
+          </div>
+          <div class="panel-body">
+        <div class="row ">
+           <div class="col-md-4 text-right ">
+         <label> Looking for a</label>
+          </div>
+      <div class="col-md-5">
+         <p><b>Full Time Job</b> </p>
+         
+      </div>
+      <div class="col-md-3">
+            </div>
+      
+         
+          </div>
+      <div class="row ">
+           <div class="col-md-4 text-right ">
+         <label> Can Start working</label>
+          </div>
+      <div class="col-md-5">
+         <p><b>Immediately</b> </p>
+         
+      </div>
+      <div class="col-md-3">
+            </div>
+      
+         
+          </div>
+            <div class="row ">
+           <div class="col-md-4 text-right ">
+         <label> Preferred location</label>
+          </div>
+      <div class="col-md-5">
+         <p><b>Anywhere in India</b> </p>
+         
+      </div>
+      <div class="col-md-3">
+            </div>
+      
+         
+          </div>
+                 
+ </div>
+ 
+ 
+ </div>
+<div class="row">
+  <div class="col-sm-12">
+    <form action="/file-upload"
+    class="dropzone"
+    dropzone="dropzoneConfig"
+    id="my-awesome-dropzone"></form>
+  </div>
+</div>
